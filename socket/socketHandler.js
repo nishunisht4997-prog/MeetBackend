@@ -7,8 +7,6 @@ module.exports = (io) => {
 
     // Request to join room (waiting room logic)
     socket.on("request-to-join", ({ roomId, name }) => {
-      socket.join(roomId);
-
       if (!waitingRooms[roomId]) {
         waitingRooms[roomId] = [];
       }
@@ -55,9 +53,6 @@ module.exports = (io) => {
 
         // Notify the rejected user
         io.to(userId).emit("reject-join");
-
-        // Remove user from room
-        socket.to(roomId).emit("user-left", userId);
 
         console.log("User rejected:", userId, "Room:", roomId);
       }
