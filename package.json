@@ -12,11 +12,20 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.6",
+    "dotenv": "^16.4.5",
     "express": "^5.2.1",
     "socket.io": "^4.8.3",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishunisht4997-prog/meet-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nishunisht4997-prog/meet-backend/issues"
+  },
+  "homepage": "https://github.com/nishunisht4997-prog/meet-backend#readme"
 }

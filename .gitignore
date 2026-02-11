@@ -11,6 +11,8 @@ lerna-debug.log*
 node_modules/
 */node_modules/
 
+.env
+
 # Build outputs
 dist/
 build/
